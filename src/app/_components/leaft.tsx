@@ -22,9 +22,9 @@ function Leaf({ isOpen, setIsOpen,getNavLinkClass }:any) {
 
   return (
     isVisible && (
-      <div className={`fixed top-0 left-0 w-full h-full z-40 md:hidden ${isOpen ? "fade-in" : "fade-out"}`}>
-        <div className="w-full h-full bg-black opacity-70 z-40" onClick={handleClose}></div>
-        <div className={`bg-slate-100 min-w-[100px] w-3/4 z-50 top-0 h-full fixed p-3 text-black ${isOpen ? "slide-in" : "slide-out"}`}>
+      <div className={`fixed top-0 left-0 w-full h-full z-40 md:hidden backdrop-blur-sm ${isOpen ? "fade-in" : "fade-out"}`}>
+        <div className="w-full h-full bg-black opacity-60  z-40" onClick={handleClose}></div>
+        <div className={`bg-white opacity-90  min-w-[100px] shadow-lg w-1/2 z-50 top-0 h-full fixed p-3 text-black ${isOpen ? "slide-in" : "slide-out"}`}>
           <div className="flex justify-end cursor-pointer">
             <X onClick={handleClose} />
           </div>
