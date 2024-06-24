@@ -29,13 +29,13 @@ const Nav = () => {
               alt="logo" 
               width={344} 
               height={392} 
-              className="w-[100px] md:w-[180px] p-2 px-4 bg-black rounded-b-lg" 
+              className="w-[140px] md:w-[180px] p-2 px-4 bg-black rounded-b-lg" 
             />
           </div>
 
           </Link>
           <div id="right-side" className="flex gap-2 text-white ml-auto">
-            <Menu className="cursor-pointer md:hidden" onClick={handleToggle} />
+            <Menu className="cursor-pointer md:hidden" onClick={handleToggle} size={40} />
             <ul className='hidden md:flex md:justify-between gap-12 text-lg  pr-10 font-semibold'>
               <Link href="/">
                 <li className={`${getNavLinkClass('/')} cursor-pointer transition-colors duration-300`}>Inicio</li>
